@@ -1,0 +1,9 @@
+services:
+  weather:
+    build:
+      context: .
+    image: weather
+    container_name: weather
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3002:80"
